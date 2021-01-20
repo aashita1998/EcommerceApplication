@@ -19,3 +19,5 @@ This project is divided into eleven steps:
 9.	Payment Activity
 10.	Logout Activity
 11.	Internet Connectivity
+
+ROOM database is used to store the local data.
