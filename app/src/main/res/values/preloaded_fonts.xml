@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arizonia</item>
+        <item>@font/bangers</item>
+        <item>@font/bungee</item>
+        <item>@font/bungee_shade</item>
+        <item>@font/butcherman</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/kite_one</item>
+        <item>@font/tenali_ramakrishna</item>
+    </array>
+</resources>

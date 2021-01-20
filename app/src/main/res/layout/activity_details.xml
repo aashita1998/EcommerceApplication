@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="400dp"
+            android:layout_height="575dp"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            android:padding="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="371dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+
+            <ImageView
+                android:id="@+id/prodimg"
+                android:layout_width="408dp"
+                android:layout_height="467dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.like.LikeButton
+                android:id="@+id/fav"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="510dp"
+                android:layout_gravity="left"
+                app:anim_scale_factor="2"
+                app:circle_end_color="#880303"
+                app:circle_start_color="#880303"
+                app:dots_primary_color="#FFEB3B"
+                app:dots_secondary_color="#FFEB3B"
+                app:icon_size="15dp"
+                app:icon_type="heart"
+                app:is_enabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.977"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.052"
+                app:like_drawable="@drawable/heart_on"
+
+                app:unlike_drawable="@drawable/heart_off" />
+
+
+            <!--            </LinearLayout>-->
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="522dp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp"
+            android:padding="20dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prodname"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textColor="#050505"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price (INR) : "
+                        android:textColor="#000000"
+                        android:textSize="35dp"/>
+
+                    <TextView
+                        android:id="@+id/prodprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35sp"
+                        android:textColor="#009688"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="388dp"
+                    android:layout_height="60dp"
+                    android:text="SPECIFICATIONS"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="388dp"
+                    android:layout_height="213dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:id="@+id/prodSpecID"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="15dp"
+        android:padding="20dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="438dp"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/prodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="435dp"
+            android:fontFamily="@font/tenali_ramakrishna"
+            android:textColor="#090909"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="490dp"
+            android:text="Price(INR) : "
+            android:textSize="35sp"
+            android:fontFamily="@font/tenali_ramakrishna"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/pricenum"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="491dp"
+            android:fontFamily="@font/tenali_ramakrishna"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="#009688"
+            android:textSize="35sp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
